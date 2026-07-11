@@ -1,0 +1,129 @@
+{
+  // ===========================
+  // Copilot / AI Settings
+  // ===========================
+  "github.copilot.enable": {
+    "*": false,        // Disable Copilot for all file types
+    "plaintext": false, // Disable for plain text
+    "markdown": false,  // Disable for markdown files
+    "scminput": false,  // Disable for source control input
+  },
+
+  // ===========================
+  // UI / Layout Settings
+  // ===========================
+  "workbench.statusBar.visible": false,          // Hide the bottom status bar
+  "workbench.activityBar.location": "hidden",    // Hide the activity bar (left sidebar icons)
+  "window.menuBarVisibility": "compact",         // Compact menu bar (hamburger style)
+  "workbench.navigationControl.enabled": false,  // Disable navigation controls
+  "window.commandCenter": false,                 // Disable the command center in title bar
+  "workbench.startupEditor": "none",             // Don't open any editor on startup
+  "workbench.iconTheme": "material-icon-theme",  // Use Material Icon Theme for file icons
+  "workbench.layoutControl.enabled": false,        // Disable layout controls
+  "workbench.browser.showInTitleBar": false,     // Hide browser in title bar
+  "workbench.editor.enablePreview": false,       // Disable preview mode for editors
+  "workbench.editor.empty.hint": "hidden",       // Hide hint when editor is empty
+
+  // ===========================
+  // Security Settings
+  // ===========================
+  "security.workspace.trust.banner": "never",    // Never show workspace trust banner
+  "security.workspace.trust.enabled": false,     // Disable workspace trust feature
+
+  // ===========================
+  // Editor Settings
+  // ===========================
+  "editor.formatOnSave": true,                   // Auto-format code when saving
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as default formatter
+  "editor.mouseWheelZoom": true,                 // Allow zooming with mouse wheel
+  "editor.minimap.enabled": false,               // Disable the minimap on the right
+  "breadcrumbs.enabled": false,                  // Disable breadcrumbs navigation
+  "editor.stickyScroll.enabled": false,          // Disable sticky scroll headers
+  "editor.allowVariableFontsInAccessibilityMode": true, // Allow variable fonts in accessibility mode
+
+  // ===========================
+  // Font Settings
+  // ===========================
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Regular",         // Font for CodeLens
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Regular",   // Font for inline suggestions
+  "chat.editor.fontFamily": "JetBrainsMono Nerd Font Regular",            // Font for chat editor
+  "chat.fontFamily": "JetBrainsMono Nerd Font Regular",                   // Font for chat panel
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font Regular",          // Font for debug console
+  "scm.inputFontFamily": "JetBrainsMono Nerd Font Regular",               // Font for SCM input
+  "notebook.markup.fontFamily": "JetBrainsMono Nerd Font Regular",        // Font for notebook markup
+  "notebook.output.fontFamily": "JetBrainsMono Nerd Font Regular",        // Font for notebook output
+  "markdown.preview.fontFamily": "JetBrainsMono Nerd Font Regular",       // Font for markdown preview
+  "editor.fontFamily": "'JetBrainsMono Nerd Font'",                       // Main editor font
+  "editor.fontLigatures": true,                                           // Enable font ligatures
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",          // Terminal font
+  "terminal.integrated.fontSize": 15,                                     // Terminal font size
+  "terminal.integrated.fontLigatures.enabled": true,                      // Enable terminal ligatures
+
+  // ===========================
+  // Cursor Settings
+  // ===========================
+  "terminal.integrated.cursorStyle": "line",                // Use line cursor in terminal
+  "animations.CursorAnimation": true,                       // Enable cursor animation
+  "editor.cursorSmoothCaretAnimation": "on",                // Smooth caret animation when typing
+  "editor.overtypeCursorStyle": "line-thin",               // Thin line cursor in overtype mode
+  "editor.cursorSurroundingLinesStyle": "all",              // Show all surrounding lines
+
+  // ===========================
+  // Scrollbar Settings
+  // ===========================
+  "editor.scrollbar.horizontalScrollbarSize": 0,   // Hide horizontal scrollbar size
+  "editor.scrollbar.vertical": "hidden",           // Hide vertical scrollbar
+  "editor.scrollbar.horizontal": "hidden",         // Hide horizontal scrollbar
+  "editor.hideCursorInOverviewRuler": true,         // Hide cursor in overview ruler
+  "editor.overviewRulerBorder": false,              // Hide overview ruler border
+
+  // ===========================
+  // Terminal Settings
+  // ===========================
+  "terminal.integrated.initialHint": false,              // Don't show terminal hint on first use
+  "terminal.integrated.stickyScroll.enabled": false,     // Disable sticky scroll in terminal
+
+  // ===========================
+  // Extension Settings
+  // ===========================
+  "extensions.ignoreRecommendations": true,    // Don't show extension recommendations
+  "extensions.autoCheckUpdates": false,        // Don't auto-check for extension updates
+  "extensions.autoUpdate": "off",              // Don't auto-update extensions
+  "update.mode": "none",                       // Disable all VS Code updates
+
+  // ===========================
+  // Live Server Settings
+  // ===========================
+  "liveServer.settings.donotShowInfoMsg": true,   // Don't show Live Server info messages
+  "liveServer.settings.donotVerifyTags": true,    // Don't verify HTML tags in Live Server
+
+  // ===========================
+  // Chat / Copilot Chat Settings
+  // ===========================
+  "chat.titleBar.openInAgentsWindow.enabled": false, // Don't open agents window from chat title bar
+
+  // ===========================
+  // Custom CSS Imports (for theme customization)
+  // ===========================
+  "vscode_custom_css.imports": [
+    "file:///home/yu/cursor/index.js",                                              // Custom cursor script
+    "file:///home/yu/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js", // Animations extension
+  ],
+
+  // ===========================
+  // Notebook Settings
+  // ===========================
+  "notebook.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier for notebooks
+
+  // ===========================
+  // Language-Specific Settings
+  // ===========================
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client" // Use Intelephense for PHP formatting
+  },
+
+  // ===========================
+  // Theme
+  // ===========================
+  "workbench.colorTheme": "Atom One Dark" // Use Atom One Dark theme
+}

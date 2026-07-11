@@ -1,0 +1,75 @@
+[
+  // ===========================
+  // File Explorer Shortcuts
+  // ===========================
+
+  // Ctrl+N: Create new file (only when Explorer panel is visible)
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible",
+  },
+
+  // Ctrl+Shift+N: Create new folder (only when Explorer panel is visible)
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible",
+  },
+
+  // Ctrl+Shift+N: Override default "New Window" command (disabled)
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow",
+  },
+
+  // ===========================
+  // Editor Shortcuts
+  // ===========================
+
+  // Shift+Alt+Up: Copy line up (when editor is focused and not read-only)
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly",
+  },
+
+  // Shift+Alt+Down: Copy line down (COMMENTED OUT - not active)
+  // {
+  //   "key": "shift+alt+down",
+  //   "command": "editor.action.copyLinesDownAction",
+  //   "when": "editorTextFocus && !editorReadonly",
+  // },
+
+  // ===========================
+  // Suggest Widget Shortcuts
+  // ===========================
+
+  // Escape: Close autocomplete/suggest widget (when it's visible)
+  {
+    "key": "escape",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible",
+  },
+
+  // ===========================
+  // Terminal Shortcuts
+  // ===========================
+
+  // Ctrl+Delete: Kill/close terminal (when terminal is focused)
+  {
+    "key": "ctrl+delete",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus",
+  },
+
+  // ===========================
+  // Panel Shortcuts
+  // ===========================
+
+  // Ctrl+Alt+M: Toggle maximize panel (terminal/output/debug)
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.toggleMaximizedPanel",
+  }
+]
